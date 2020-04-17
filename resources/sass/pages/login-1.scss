@@ -1,0 +1,28 @@
+.login-page.login {
+    background-color: transparent;
+    .login-wrapper {
+        &::before {
+            background-image: url("/assets/skynight.jpg");
+            background-position: center top;
+            background-size: cover;
+            content: "";
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        &::after {
+            background-color: rgba(38, 50, 56, 0.6);
+            content: "";
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}

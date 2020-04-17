@@ -1,0 +1,151 @@
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@mdi/font/css/materialdesignicons.css"; // Ensure you are using css-loader
+@import "~vuetify/dist/vuetify.css";
+@import "~toastr/toastr.scss";
+
+@import "pages/login";
+@import "pages/login-1";
+
+// Components
+//----------------------------------
+
+@import "components/toastr.extend";
+
+h1 {
+    font-size: 48px;
+    font-weight: thin;
+    letter-spacing: -1.5;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -0.5;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: normal;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.v-list-item--active.v-list-item.v-list-item--link.theme--dark {
+    color: #ffffff !important;
+    caret-color: #ffffff !important;
+}
+
+/* time line */
+
+.timeline {
+    position: relative;
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline > li {
+    position: relative;
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #ddd;
+    left: 31px;
+    margin: 0;
+    border-radius: 0.25rem;
+}
+
+.timeline > li > .fa,
+.timeline > li > .glyphicon,
+.timeline > li > .ion,
+.timeline > li > .far,
+.timeline > li > .fas {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    background: #adb5bd;
+    border-radius: 50%;
+    text-align: center;
+    left: 18px;
+    top: 0;
+    color: #fff;
+}
+
+.timeline-inverse > li > .timeline-item {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+
+.timeline > .time-label > span {
+    font-weight: 600;
+    padding: 5px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.timeline > li > .timeline-item {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    margin-top: 0;
+    background: #fff;
+    color: #444;
+    margin-left: 55px;
+    margin-right: 0px;
+    padding: 0;
+    position: relative;
+}
+
+.timeline > li > .timeline-item > .time {
+    color: #999;
+    float: right;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.timeline-inverse > li > .timeline-item > .timeline-header {
+    border-bottom-color: #ddd;
+}
+
+.timeline > li > .timeline-item > .timeline-header {
+    margin: 0;
+    color: #555;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 10px;
+    font-size: 0.75rem !important;
+    line-height: 1.1;
+}
+
+.timeline > li > .timeline-item > .timeline-body,
+.timeline > li > .timeline-item > .timeline-footer {
+    padding: 10px;
+    font-size: 0.75rem !important;
+}
+
+.timeline li:nth-last-child(2) {
+    margin-bottom: 0px !important;
+}
+/* time line end */

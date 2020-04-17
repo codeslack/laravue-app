@@ -1,0 +1,219 @@
+INSERT INTO `oc_pan_utow` (
+    `id`,
+    `mobile_no`,
+    `block_id`,
+    `txn_id`,
+    `user_belong`,
+    `coupon`,
+    `apply_mode`,
+    `amount`,
+    `name`,
+    `fname`,
+    `dob`,
+    `mobile`,
+    `address`,
+    `type`,
+    `status_id`,
+    `date_added`
+  )
+VALUES
+  (
+    '1',
+    '9933100106',
+    '1',
+    '1688001037',
+    '0',
+    '',
+    'PAN-NORMAL',
+    '175.00',
+    'KAJEM ALI',
+    'BADRUL SK',
+    '31-03-2019',
+    '8855663322',
+    'ALIMPUR, KAPASDAHANA, BENDALDAGA',
+    'u2w-pan',
+    '21',
+    '2019-04-01 21:51:59'
+  );
+INSERT INTO `oc_recharge_order` (
+    `id`,
+    `mobile_no`,
+    `orderid`,
+    `txid`,
+    `operator`,
+    `service`,
+    `amount`,
+    `status`,
+    `error`,
+    `operatorid`,
+    `balance`,
+    `creditUsed`,
+    `remarks`,
+    `type`,
+    `time`
+  )
+VALUES
+  (
+    '1',
+    '9933200104',
+    '2',
+    'U2W-RAND000000468',
+    'Uservice Product',
+    '',
+    '90.00',
+    'SUCCESS',
+    '0',
+    '0',
+    '0.00',
+    '0',
+    'Uservice Product # U2W-RAND000000468',
+    'uproduct',
+    'April 03 2019 08:46:32 PM'
+  );
+INSERT INTO `oc_service_price` (
+    `id`,
+    `name`,
+    `description`,
+    `details`,
+    `comp_comm`,
+    `state_comm`,
+    `district_comm`,
+    `block_comm`,
+    `refferal_comm`,
+    `api_price`,
+    `vendor_price`,
+    `retailer_price`,
+    `customer_price`,
+    `recurring_price`,
+    `is_group`,
+    `is_default`,
+    `on_off`,
+    `fixed_percent`,
+    `image`,
+    `sort_order`
+  )
+VALUES
+  (
+    '1',
+    'PAN-NORMAL',
+    'NORMAL PAN 25 - 30 DAYS @ 107',
+    'What is Lorem Ipsum?\r\n',
+    '8.20',
+    '0.25',
+    '0.50',
+    '1.00',
+    '0.05',
+    '104.00',
+    '97.00',
+    '68.00',
+    '175.00',
+    '0.00',
+    'PAN-U2W',
+    '1',
+    '0',
+    'f',
+    '',
+    '0'
+  );
+INSERT INTO `oc_service_price` (
+    `id`,
+    `name`,
+    `description`,
+    `details`,
+    `comp_comm`,
+    `state_comm`,
+    `district_comm`,
+    `block_comm`,
+    `refferal_comm`,
+    `api_price`,
+    `vendor_price`,
+    `retailer_price`,
+    `customer_price`,
+    `recurring_price`,
+    `is_group`,
+    `is_default`,
+    `on_off`,
+    `fixed_percent`,
+    `image`,
+    `sort_order`
+  )
+VALUES
+  (
+    '46',
+    'dmt',
+    '',
+    '',
+    '0.00',
+    '0.10',
+    '0.20',
+    '0.30',
+    '0.01',
+    '0.00',
+    '0.65',
+    '1.00',
+    '1.00',
+    '0.00',
+    'dmt',
+    '0',
+    '0',
+    'p',
+    '',
+    '0'
+  );
+INSERT INTO `oc_attachments` (
+    `id`,
+    `txn_id`,
+    `file_name`,
+    `file_type`,
+    `date_added`
+  )
+VALUES
+  (
+    '11',
+    '1688001047',
+    'catalog/pan_card/1688001047/SGS.png',
+    'image/png',
+    '2019-04-08 23:15:33'
+  );
+INSERT INTO `oc_attachments_replies` (
+    `id`,
+    `mobile_no`,
+    `txn_id`,
+    `user_belong`,
+    `status_id`,
+    `message`,
+    `ip`,
+    `date_added`
+  )
+VALUES
+  (
+    '1',
+    '9933100106',
+    '1688001037',
+    '0',
+    '21',
+    'create a new pan application',
+    '192.168.0.112',
+    '2019-04-01 21:51:59'
+  );
+INSERT INTO `oc_attachments_replies` (
+    `id`,
+    `mobile_no`,
+    `txn_id`,
+    `user_belong`,
+    `status_id`,
+    `message`,
+    `ip`,
+    `date_added`
+  )
+VALUES
+  (
+    '12',
+    '9933200105',
+    '1688001048',
+    '0',
+    '21',
+    'create a new pan application',
+    '192.168.0.100',
+    '2019-04-09 18:59:02'
+  );
