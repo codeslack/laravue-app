@@ -48,7 +48,7 @@ import FrontWallet from "./../views/front/Wallet.vue";
 import FrontSettings from "./../views/front/Settings.vue";
 import FrontPan from "./../views/front/Contact.vue";
 import FrontAffBirth from "./../views/front/Affidavits/AffBirth.vue";
-import FrontAffDl from "./../views/front/Affidavits/AffDl.vue";
+import FrontAffDl from "./../views/front/Wallet.vue";
 import FrontAffDob from "./../views/front/Affidavits/AffDob.vue";
 import FrontAffSamePerson from "./../views/front/Affidavits/AffSamePerson.vue";
 
@@ -160,7 +160,7 @@ const routes = [
             {
                 path: "user/profile",
                 name: "Profile",
-                component: FrontProfile,
+                component: () => import("@/views/front/Profile"),
                 meta: {
                     title: "Profile User",
                     group: "apps",
@@ -171,9 +171,9 @@ const routes = [
                 }
             },
             {
-                path: "user/wallet",
+                path: "user/wallets",
                 name: "Wallet",
-                component: FrontWallet,
+                component: () => import("@/views/front/Wallet"),
                 meta: {
                     title: "Wallet User",
                     group: "apps",

@@ -8,4 +8,4 @@
 
 // Route::get('/', 'WelcomeController@showWelcomePage')->name('welcome');
 
-Route::get('/{vue?}', 'SinglePageController@index')->where('vue', '[\/\w\.-]*')->name('home');
+Route::get('/{vue?}', 'SinglePageController@index')->where('vue', '[\/\w\.-]*')->name('login');

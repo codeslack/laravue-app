@@ -51,9 +51,9 @@
 				<v-list class="pa-0">
 					<v-list-item
 						v-for="(item, index) in items"
-						:to="!item.href ? item.name : null"
+						:to="!item.href ? { name: item.name } : null"
 						:href="item.href"
-						@click="item.click"
+						@click.prevent="item.click"
 						ripple="ripple"
 						:disabled="item.disabled"
 						:target="item.target"
@@ -67,9 +67,7 @@
 						</v-list-item-action>
 						<v-list-item-content>
 							<v-list-item-title>
-								{{
-								item.title
-								}}
+								{{ item.title }}
 							</v-list-item-title>
 						</v-list-item-content>
 					</v-list-item>
@@ -79,8 +77,8 @@
 	</v-app-bar>
 </template>
 <script>
-import NotificationList from "./../../../components/NotificationList";
-import helpers from "./../../../plugins/helpers";
+import NotificationList from "@/components/NotificationList";
+import helpers from "@/plugins/helpers";
 export default {
 	name: "AppToolbar",
 	components: {
@@ -91,15 +89,13 @@ export default {
 			items: [
 				{
 					icon: "mdi-account-circle",
-					// href: "#",
-					name: "/user/profile",
+					name: "Profile",
 					title: "Profile",
 					click: this.handleProfile
 				},
 				{
 					icon: "mdi-wallet",
-					// href: "#",
-					name: "/user/wallet",
+					name: "Wallet",
 					title: "Wallet",
 					click: this.handleWallet
 				},

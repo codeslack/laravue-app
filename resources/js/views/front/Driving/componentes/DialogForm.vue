@@ -48,7 +48,7 @@
                                             "
                                         />
                                     </template>
-                                    <v-date-picker
+                                    <v-date-picker no-title scrollable
                                         v-model="toDatePicker"
                                         @input="toMeun = false"
                                     ></v-date-picker>
