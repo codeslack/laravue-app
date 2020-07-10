@@ -133,7 +133,7 @@
 	</div>
 </template>
 <script>
-import { Items as Users } from "./../../api/user";
+import { Items as Users } from "@/api/user";
 export default {
 	data: () => ({
 		dialog: false,

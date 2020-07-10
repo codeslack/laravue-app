@@ -339,32 +339,53 @@ const routes = [
                     userAuth: false
                 }
             },
-            // {
-            //     path: "profiles",
-            //     name: "Profile",
-            //     component: AdminProfile,
-            //     meta: {
-            //         title: "Profile",
-            //         group: "apps",
-            //         icon: "mdi-view-dashboard",
-            //         requiresAuth: true,
-            //         adminAuth: true,
-            //         userAuth: false
-            //     }
-            // },
-            // {
-            //     path: "settings",
-            //     name: "Settings",
-            //     component: AdminSettings,
-            //     meta: {
-            //         title: "Settings",
-            //         group: "apps",
-            //         icon: "mdi-view-dashboard",
-            //         requiresAuth: true,
-            //         adminAuth: true,
-            //         userAuth: false
-            //     }
-            // },
+
+            //Wallets
+
+            {
+                path: "wallets/verify",
+                name: "AdminVerifyWallet",
+                component: () => import("@/views/admin/Wallets/Verify"),
+                meta: {
+                    title: "Verify Wallets",
+                    requiresAuth: true,
+                    adminAuth: true,
+                    userAuth: false
+                }
+            },
+            {
+                path: "wallets/success",
+                name: "AdminSuccessWallet",
+                component: () => import("@/views/admin/Wallets/Success"),
+                meta: {
+                    title: "Success Wallets",
+                    requiresAuth: true,
+                    adminAuth: true,
+                    userAuth: false
+                }
+            },
+            {
+                path: "wallets/reject",
+                name: "AdminRejectWallet",
+                component: () => import("@/views/admin/Wallets/Reject"),
+                meta: {
+                    title: "Reject Wallets",
+                    requiresAuth: true,
+                    adminAuth: true,
+                    userAuth: false
+                }
+            },
+            {
+                path: "wallets/topup",
+                name: "AdminTopupWallet",
+                component: () => import("@/views/admin/Wallets/Topup"),
+                meta: {
+                    title: "Topup Wallets",
+                    requiresAuth: true,
+                    adminAuth: true,
+                    userAuth: false
+                }
+            },
 
             //Affidavits
 
@@ -378,40 +399,54 @@ const routes = [
                     adminAuth: true,
                     userAuth: false
                 }
-            }
-            // {
-            //     path: "affidavits/dls",
-            //     name: "DlAffidavit",
-            //     component: AdminAffDl,
-            //     meta: {
-            //         title: "Dl Affidavit",
-            //         requiresAuth: true,
-            //         adminAuth: true,
-            //         userAuth: false
-            //     }
-            // },
-            // {
-            //     path: "affidavits/dobs",
-            //     name: "DobAffidavit",
-            //     component: AdminAffDob,
-            //     meta: {
-            //         title: "DOB Affidavit",
-            //         requiresAuth: true,
-            //         adminAuth: true,
-            //         userAuth: false
-            //     }
-            // },
-            // {
-            //     path: "affidavits/samepersons",
-            //     name: "SamePersonAffidavit",
-            //     component: AdminAffSamePerson,
-            //     meta: {
-            //         title: "Same Person Affidavit",
-            //         requiresAuth: true,
-            //         adminAuth: true,
-            //         userAuth: false
-            //     }
-            // }
+            },
+
+            // Settings
+            {
+                path: "settings/company-profile",
+                name: "CompanyProfile",
+                component: () => import("@/views/admin/Wallets/Verify"),
+                meta: {
+                    title: "Company Profile Settings",
+                    requiresAuth: true,
+                    adminAuth: true,
+                    userAuth: false
+                }
+            },
+
+            {
+                path: "settings/email-settings",
+                name: "EmailSettings",
+                component: () => import("@/views/admin/Wallets/Verify"),
+                meta: {
+                    title: "Email Settings",
+                    requiresAuth: true,
+                    adminAuth: true,
+                    userAuth: false
+                }
+            },
+            {
+                path: "settings/financial-year",
+                name: "FinancialYear",
+                component: () => import("@/views/admin/Wallets/Verify"),
+                meta: {
+                    title: "Financial Year Settings",
+                    requiresAuth: true,
+                    adminAuth: true,
+                    userAuth: false
+                }
+            },
+            {
+                path: "settings/countries",
+                name: "Countries",
+                component: () => import("@/views/admin/Wallets/Verify"),
+                meta: {
+                    title: "Countries Settings",
+                    requiresAuth: true,
+                    adminAuth: true,
+                    userAuth: false
+                }
+            },
         ]
     },
 

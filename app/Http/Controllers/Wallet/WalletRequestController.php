@@ -10,12 +10,12 @@ class WalletRequestController extends ApiController
 {
     public function index()
     {
-        // $data = WalletRequest::where('user_id', $this->getUser()->id)
-        //     ->latest()
-        //     ->get();
+        $data = WalletRequest::where('user_id', $this->getUser()->id)
+            ->latest()
+            ->get();
 
-            $data = WalletRequest::latest()
-            ->get();            
+            // $data = WalletRequest::latest()
+            // ->get();            
 
         return $this->showAll($data);
     }

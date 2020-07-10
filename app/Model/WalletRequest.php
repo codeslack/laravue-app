@@ -25,6 +25,16 @@ class WalletRequest extends Model
         return date('d-m-Y', strtotime($trans_date));
     }
 
+    public function updateStatus($status_id)
+    {
+        return $this->update(['status_id' => $status_id]);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\Model\User');
+    }
+
     public function status()
     {
         return $this->belongsTo('App\Model\Status');

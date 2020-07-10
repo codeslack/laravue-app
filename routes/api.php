@@ -20,17 +20,24 @@ Route::group([
     'middleware' => 'auth:api',
 ], function () {
 
-    Route::group([
-        'name' => 'admin.',
-        'prefix' => 'admin',
-        'middleware' => 'admin'
-    ], function () {
+    Route::namespace('Admin')
+    ->prefix('admin')
+    ->name('admin.')
+    ->group(function () {
 
         // URL: /admin/users
         // Route name: admin.users
-        // Route::apiResources(['user' => 'API\UserController']);
-        Route::get('users', 'User\UserController@index')->name('users');
+        Route::resource('users', 'UsersController');
+        Route::resource('vouchers', 'VoucherController');
+
+        // Wallet route list
+        Route::get('wallet/verify', 'Wallet\WalletController@index')->name('wallet.verify');
+        Route::get('wallet/success', 'Wallet\WalletController@success')->name('wallet.success');
+        Route::get('wallet/reject', 'Wallet\WalletController@reject')->name('wallet.reject');
+        Route::get('wallet/topup', 'Wallet\WalletController@topup')->name('wallet.topup');
     });
+
+
 
     // front route list
 

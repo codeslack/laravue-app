@@ -37,7 +37,7 @@ class UserController extends ApiController
             'type' => $request['type'],
             'bio' => $request['bio'],
             'address' => $request['address'],
-            'photo' => $request['photo'] != '' ? $request['photo'] : 'profile.png',
+            'photo' => $request['photo'] != '' ? $request['photo'] : 'profile.svg',
             'password' => Hash::make($request['password']),
             'admin' => User::REGULAR_USER,
             'verified' => User::UNVERIFIED_USER,

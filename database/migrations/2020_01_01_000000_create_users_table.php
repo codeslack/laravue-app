@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('type')->default('user');
             $table->mediumText('bio')->nullable();
-            $table->string('photo')->default('profile.png');
+            $table->string('photo')->default('profile.svg');
             $table->double('balance', 15, 2)->default('0.00')->nullable();
             $table->string('mobile')->unique();
             $table->string('email')->unique();

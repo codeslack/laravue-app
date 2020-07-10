@@ -54,6 +54,17 @@ class ApiController extends Controller
         return $user;
     }
 
+    public function generalUser($userId)
+    {
+        $user = User::find($userId);
+
+        if (!$user) {
+            throw new AuthorizationException('This action is unauthorized, try re-login for Access !');
+        }
+
+        return $user;
+    }
+
     public function getUser()
     {
         $user = auth('api')->user();

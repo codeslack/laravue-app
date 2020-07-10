@@ -15,6 +15,7 @@ class WalletRequestTransformer extends TransformerAbstract
             'order_id'      => $model->order_id,
             'amount'        => $model->amount,
             'file_name'     => url("uploads/{$model->file_name}"),
+            'avatar'        => url("img/profile/{$model->user->photo}"),
             'status'        => $model->status->name,
             'status_color'  => $model->status->color,
             'remarks'       => $model->remarks,
