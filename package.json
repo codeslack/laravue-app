@@ -27,7 +27,7 @@
     },
     "dependencies": {
         "jspdf": "^1.5.3",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "object-to-formdata": "^3.0.6",
         "secure-ls": "^1.2.6",
         "vue": "^2.6.11",
